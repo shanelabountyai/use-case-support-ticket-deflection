@@ -1,0 +1,77 @@
+{
+  "SYNTHETIC": "Invented content. See README.md in this directory.",
+  "macros": [
+    {
+      "id": "mac-refund-how-to",
+      "title": "Refund — how to request",
+      "questionType": "refund-window",
+      "lastUpdated": "2026-06-05",
+      "body": "Thanks for getting in touch. You can request a refund within 30 days of delivery straight from Your Orders — open the order, choose Request refund and pick a reason. It goes back to your original payment method and usually shows within 5 to 7 business days.",
+      "expectedTriage": "current",
+      "triageEvidence": "Agrees with hc-refund-window on both the 30-day window and the destination of the refund."
+    },
+    {
+      "id": "mac-refund-14-day",
+      "title": "Refund — 14 day window",
+      "questionType": "refund-window",
+      "lastUpdated": "2023-02-20",
+      "body": "Refunds can be requested within 14 days of delivery and are issued as store credit. Please call our support line to start the process.",
+      "expectedTriage": "contradicted",
+      "triageEvidence": "Directly contradicts hc-refund-window: 14 days vs 30 days, store credit vs original payment method."
+    },
+    {
+      "id": "mac-tracking-delay",
+      "title": "Tracking — no movement",
+      "questionType": "order-tracking",
+      "lastUpdated": "2026-07-15",
+      "body": "Sorry for the wait. Tracking updates once the carrier scans the parcel, normally within 24 hours of dispatch. If there has been no update for 5 business days we treat the parcel as delayed and can send a replacement or refund you without needing the original back.",
+      "expectedTriage": "current",
+      "triageEvidence": "Agrees with hc-order-tracking including the 5 business day threshold."
+    },
+    {
+      "id": "mac-tracking-old-threshold",
+      "title": "Tracking — no movement (older)",
+      "questionType": "order-tracking",
+      "lastUpdated": "2024-03-11",
+      "body": "If tracking has not updated in 10 business days please get back in touch and we will open an investigation with the carrier. We cannot refund until the investigation closes.",
+      "expectedTriage": "contradicted",
+      "triageEvidence": "Contradicts hc-order-tracking: 10 business days vs 5, and blocks a refund the current article allows."
+    },
+    {
+      "id": "mac-address-change",
+      "title": "Address change before dispatch",
+      "questionType": "change-address",
+      "lastUpdated": "2026-07-01",
+      "body": "You can update the delivery address yourself from Your Orders any time before the parcel is dispatched. Once it is with the carrier the address is fixed, but you can refuse delivery and it comes back to us for a full refund.",
+      "expectedTriage": "current",
+      "triageEvidence": "Agrees with hc-change-address."
+    },
+    {
+      "id": "mac-address-change-manual",
+      "title": "Address change — agent edits in admin",
+      "questionType": "change-address",
+      "lastUpdated": "2024-08-19",
+      "body": "Let me know the new address and I will update it in the admin console for you, even if the parcel has already gone out.",
+      "expectedTriage": "superseded",
+      "triageEvidence": "Describes an agent-side workflow hc-change-address says is no longer possible after dispatch."
+    },
+    {
+      "id": "mac-password-reset",
+      "title": "Password reset self-serve",
+      "questionType": "password-reset",
+      "lastUpdated": "2026-07-24",
+      "body": "Use Forgot password on the sign-in screen with the email on the account. The link lasts 60 minutes and works once. If it has not arrived, check spam and double-check the address. For security we are not able to reset it from our side.",
+      "expectedTriage": "current",
+      "triageEvidence": "Agrees with hc-password-reset including the 60-minute validity and the no-agent-reset rule."
+    },
+    {
+      "id": "mac-loyalty-points",
+      "title": "Loyalty points expiry",
+      "questionType": "loyalty",
+      "lastUpdated": "2022-10-04",
+      "body": "Points expire 12 months after they are earned and Silver tier starts at 500 points. Tiers are reviewed every January.",
+      "expectedTriage": "superseded",
+      "triageEvidence": "Its only supporting article, hc-loyalty-tiers-2022, is archived. No current article covers loyalty."
+    }
+  ]
+}

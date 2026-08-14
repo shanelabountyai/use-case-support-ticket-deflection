@@ -28,7 +28,9 @@
     "db:seed:test": "dotenv -e .env.test -e .env.local -- tsx packages/db/prisma/seed.mts",
     "db:reset:test": "dropdb --if-exists ticket_deflection_test && createdb ticket_deflection_test && npm run db:migrate:test && npm run db:seed:test",
     "db:studio": "dotenv -e .env.local -- prisma studio --schema packages/db/prisma/schema.prisma",
-    "postinstall": "prisma generate --schema packages/db/prisma/schema.prisma"
+    "postinstall": "prisma generate --schema packages/db/prisma/schema.prisma",
+    "report:retrieval": "dotenv -e .env.local -- tsx scripts/retrieval-report.ts",
+    "demo:draft": "dotenv -e .env.local -- tsx scripts/draft-demo.mts"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.2",

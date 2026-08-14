@@ -1,0 +1,125 @@
+{
+  "SYNTHETIC": "Invented content. See README.md in this directory.",
+  "articles": [
+    {
+      "id": "hc-refund-window",
+      "title": "How long do I have to request a refund?",
+      "url": "https://help.example-synthetic.test/refund-window",
+      "category": "refunds",
+      "questionType": "refund-window",
+      "lastUpdated": "2026-06-02",
+      "status": "current",
+      "body": "You can request a refund within 30 days of delivery. Open the order in Your Orders, choose Request refund, and pick a reason. Refunds are issued to the original payment method and take 5 to 7 business days to appear on your statement. Items marked final sale are not eligible."
+    },
+    {
+      "id": "hc-refund-window-2023",
+      "title": "Refund requests (archived)",
+      "url": "https://help.example-synthetic.test/refund-window-old",
+      "category": "refunds",
+      "questionType": "refund-window",
+      "lastUpdated": "2023-01-14",
+      "status": "archived",
+      "body": "You can request a refund within 14 days of delivery. Refunds are issued as store credit only. Contact support by phone to start a refund."
+    },
+    {
+      "id": "hc-return-shipping",
+      "title": "Who pays for return shipping?",
+      "url": "https://help.example-synthetic.test/return-shipping",
+      "category": "returns",
+      "questionType": "return-shipping",
+      "lastUpdated": "2026-05-19",
+      "status": "current",
+      "body": "Return shipping is free when the item arrived damaged, faulty, or was not what you ordered. For change-of-mind returns a flat return fee is deducted from the refund. Print the prepaid label from Your Orders and drop the parcel at any carrier point."
+    },
+    {
+      "id": "hc-order-tracking",
+      "title": "Where is my order?",
+      "url": "https://help.example-synthetic.test/tracking",
+      "category": "delivery",
+      "questionType": "order-tracking",
+      "lastUpdated": "2026-07-11",
+      "status": "current",
+      "body": "Tracking becomes available once the parcel is scanned by the carrier, usually within 24 hours of dispatch. Open Your Orders and select Track parcel. If tracking has not updated for 5 business days the parcel is treated as delayed and you can request a replacement or refund without returning the original."
+    },
+    {
+      "id": "hc-delivery-estimates",
+      "title": "Delivery estimates by region",
+      "url": "https://help.example-synthetic.test/delivery-estimates",
+      "category": "delivery",
+      "questionType": "delivery-estimate",
+      "lastUpdated": "2026-04-28",
+      "status": "current",
+      "body": "Standard delivery is 3 to 5 business days for mainland addresses and 5 to 8 business days for island and highland addresses. Express delivery is next business day when ordered before 2pm. Estimates exclude weekends and public holidays."
+    },
+    {
+      "id": "hc-change-address",
+      "title": "Can I change my delivery address after ordering?",
+      "url": "https://help.example-synthetic.test/change-address",
+      "category": "delivery",
+      "questionType": "change-address",
+      "lastUpdated": "2026-06-30",
+      "status": "current",
+      "body": "You can change the delivery address from Your Orders until the parcel is dispatched. After dispatch the address is fixed with the carrier and cannot be changed by support. If the parcel has already left the warehouse, refuse delivery and the parcel returns to us for a full refund."
+    },
+    {
+      "id": "hc-cancel-order",
+      "title": "Cancelling an order",
+      "url": "https://help.example-synthetic.test/cancel-order",
+      "category": "orders",
+      "questionType": "cancel-order",
+      "lastUpdated": "2026-05-05",
+      "status": "current",
+      "body": "Orders can be cancelled from Your Orders up to the point of dispatch. Once dispatched an order cannot be cancelled, but it can be returned under the standard returns process once it arrives. Cancelled orders are refunded to the original payment method within 5 business days."
+    },
+    {
+      "id": "hc-password-reset",
+      "title": "Resetting your password",
+      "url": "https://help.example-synthetic.test/password-reset",
+      "category": "account",
+      "questionType": "password-reset",
+      "lastUpdated": "2026-07-22",
+      "status": "current",
+      "body": "Select Forgot password on the sign-in screen and enter the email address on the account. The reset link is valid for 60 minutes and can only be used once. If the email does not arrive, check the spam folder and confirm the address matches the one on the account. Support cannot reset a password on your behalf."
+    },
+    {
+      "id": "hc-payment-declined",
+      "title": "Why was my payment declined?",
+      "url": "https://help.example-synthetic.test/payment-declined",
+      "category": "payments",
+      "questionType": "payment-declined",
+      "lastUpdated": "2026-06-14",
+      "status": "current",
+      "body": "A decline comes from the card issuer, not from us, and we are not told the reason. The usual causes are an expired card, insufficient funds, a billing address that does not match the card, or the issuer's fraud check. Try a different payment method or contact the card issuer. A declined payment is never charged, though a pending authorisation may show for up to 5 business days."
+    },
+    {
+      "id": "hc-faulty-item",
+      "title": "My item arrived damaged or faulty",
+      "url": "https://help.example-synthetic.test/faulty-item",
+      "category": "returns",
+      "questionType": "faulty-item",
+      "lastUpdated": "2026-07-03",
+      "status": "current",
+      "body": "Report a damaged or faulty item within 30 days of delivery from Your Orders. Photographs of the damage speed up the assessment. We send a replacement at no cost, or refund in full including original delivery, and return shipping is free."
+    },
+    {
+      "id": "hc-loyalty-tiers-2022",
+      "title": "Loyalty tiers and points (archived)",
+      "url": "https://help.example-synthetic.test/loyalty-old",
+      "category": "account",
+      "questionType": "loyalty",
+      "lastUpdated": "2022-09-08",
+      "status": "archived",
+      "body": "Points expire after 12 months. Silver tier begins at 500 points and grants free standard delivery. Tier status is reviewed annually each January."
+    },
+    {
+      "id": "hc-gift-receipt-2023",
+      "title": "Gift receipts (archived)",
+      "url": "https://help.example-synthetic.test/gift-receipt-old",
+      "category": "orders",
+      "questionType": "gift-receipt",
+      "lastUpdated": "2023-11-02",
+      "status": "archived",
+      "body": "Gift receipts must be requested by contacting support before dispatch. Returns made with a gift receipt are refunded as store credit to the gift recipient."
+    }
+  ]
+}
