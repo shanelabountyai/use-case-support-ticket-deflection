@@ -19,8 +19,29 @@ import { buildCorpus, claudeGenerator, draftReply, type Article, type Macro, typ
 
 const fixture = (n: string) => JSON.parse(readFileSync(new URL(`../tests/fixtures/corpus/${n}`, import.meta.url), "utf8"));
 
-if (!process.env.ANTHROPIC_API_KEY) {
-  console.error("ANTHROPIC_API_KEY is empty or unset. Put this build's own key in .env.local.");
+/*
+ * `dotenv -e .env.local` does NOT override a variable already exported in your
+ * shell. An exported ANTHROPIC_API_KEY therefore silently shadows this build's
+ * own key, and every failure looks like a bad key in .env.local rather than a
+ * key coming from somewhere else entirely. That cost two debugging rounds, and
+ * it is also the cross-project key sharing "Project boundaries" forbids —
+ * revoking one build's key should never touch another's.
+ */
+const fromFile = readFileSync(new URL("../.env.local", import.meta.url), "utf8").match(
+  /^ANTHROPIC_API_KEY=(.+)$/m,
+)?.[1];
+const inUse = process.env.ANTHROPIC_API_KEY;
+
+if (!inUse) {
+  console.error("ANTHROPIC_API_KEY is empty or unset. Put this build's own key in .env.local (never .env.example — that file is committed).");
+  process.exit(1);
+}
+if (fromFile && inUse !== fromFile) {
+  console.error(
+    "ANTHROPIC_API_KEY is exported in your shell and is shadowing .env.local.\n" +
+      "  This build must use its own key. Run `unset ANTHROPIC_API_KEY` (and remove it\n" +
+      "  from your shell profile), then try again.",
+  );
   process.exit(1);
 }
 
