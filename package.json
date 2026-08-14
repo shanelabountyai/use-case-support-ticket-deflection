@@ -30,7 +30,8 @@
     "db:studio": "dotenv -e .env.local -- prisma studio --schema packages/db/prisma/schema.prisma",
     "postinstall": "prisma generate --schema packages/db/prisma/schema.prisma",
     "report:retrieval": "dotenv -e .env.local -- tsx scripts/retrieval-report.ts",
-    "demo:draft": "dotenv -e .env.local -- tsx scripts/draft-demo.mts"
+    "demo:draft": "dotenv -e .env.local -- tsx scripts/draft-demo.mts",
+    "agreement": "tsx scripts/agreement.mts"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.2",

@@ -10,3 +10,4 @@
 export * from "./redact.js";
 export * from "./corpus.js";
 export * from "./draft.js";
+export * from "./agreement.js";

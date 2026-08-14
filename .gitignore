@@ -26,3 +26,7 @@ blob-report/
 
 # vercel
 .vercel
+
+# Phase 0 calibration tagging — judgements about real tickets
+docs/phase-0/calibration/tagger-*.csv
+!docs/phase-0/calibration/tagger-template.csv
