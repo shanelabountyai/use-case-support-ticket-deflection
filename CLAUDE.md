@@ -78,9 +78,20 @@ Schema travels through migrations in this repo. Data does not: fixtures never re
 
 ## Layout
 
-- `docs/prd-pack.md` — session starter + one PRD prompt per milestone. Start here.
+- `START-HERE.md` — **read first.** Current state, why the project is paused, and what to do on picking it up.
+- `docs/schedule.md` — the agreed 13-week plan and what compressing to it dropped.
+- `docs/phase-0/` — the Phase 0 instruments: rubric, thresholds, decision rules, measurement design. Written, unsigned.
+- `docs/prd/` — one PRD per milestone. All seven written.
+- `docs/prd-pack.md` — the original session starter and per-milestone prompts the PRDs came from.
 - `docs/build-kickoff-package.md` — the full deliverable: rationale, workflow diagrams, evaluation, governance.
-- `docs/prd/` — PRDs as they get written, one per milestone.
+
+## Status — paused 2026-08-14
+
+No real support tickets exist for this build, and every remaining acceptance
+criterion needs them. The pipeline runs end to end against a synthetic corpus;
+the Phase 0 instruments are written and awaiting signatures. Do not build
+Phases 3–6 against synthetic data — a golden set of invented tickets produces a
+number that looks like evidence and is not. See `START-HERE.md`.
 
 ## Provenance
 
